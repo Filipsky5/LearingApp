@@ -68,11 +68,43 @@
                             <outlet property="delegate" destination="kBJ-M0-Gm7" id="a1H-qm-yQv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="PvB-hV-5qK"/>
+                    <navigationItem key="navigationItem" title="Players" id="PvB-hV-5qK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5I6-1x-7Da">
+                            <connections>
+                                <segue destination="Eqr-Hw-qOT" kind="presentation" id="AHx-wg-t0m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrN-ie-d7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="259"/>
+            <point key="canvasLocation" x="1981" y="259"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="EFs-Ry-Doc">
+            <objects>
+                <tableViewController id="Eqr-Hw-qOT" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Loc-EL-bdL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="M1u-vw-cUw">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1u-vw-cUw" id="srL-7c-xi4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eqr-Hw-qOT" id="PoA-9W-nwz"/>
+                            <outlet property="delegate" destination="Eqr-Hw-qOT" id="wUc-fq-tWO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1l-UV-qbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="259"/>
         </scene>
         <!--Gestures-->
         <scene sceneID="7T0-7e-7lr">
